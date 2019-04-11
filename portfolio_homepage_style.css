@@ -1,0 +1,75 @@
+body,
+html {
+	width: 100vw;
+	height: 100vh;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: white;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.my-menu ul {
+	list-style-type: none;
+	margin: 0 0 0 120px;
+	padding: 2px 0;
+}
+
+.my-menu li {
+	color: black;
+	padding: 0 0 0 4px;
+	display: inline;
+	text-decoration: none;
+	font-size: 1.5rem;
+	line-height: 1.25rem;
+}
+
+.my-menu li a {
+	color: black;
+	text-decoration: none;
+	margin-right: 13px;
+}
+
+.my-menu li:hover {
+	cursor: pointer;
+}
+
+.header-wrapper {
+	width: 100vw;
+	height: 100vh;
+}
+
+.travel-goals {
+	color: black;
+	display: flex;
+	flex-direction: column;
+}
+
+.text-travel p {
+	font-size: 8rem;
+	font-weight: 600;
+	margin: 0 0 0 120px;
+	padding: 10px 0;
+	cursor: pointer;
+	line-height: 7rem;
+}
+
+.text-travel a {
+	text-decoration: none !important;
+}
+
+.text-goals p {
+	font-size: 8rem;
+	font-weight: 600;
+	margin: 0 0 0 120px;
+	padding: 10px 0;
+	cursor: pointer;
+	line-height: 7rem;
+}
+
+.travel-hover p {
+	background-color: white;
+}
