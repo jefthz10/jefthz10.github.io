@@ -28,7 +28,7 @@ body {
 }
 
 .my-menu li a {
-	color: black;
+	color: #171717;
 	text-decoration: none;
 	margin-right: 13px;
 }
@@ -43,9 +43,58 @@ body {
 }
 
 .travel-goals {
-	color: black;
+	color: #171717;
 	display: flex;
 	flex-direction: column;
+
+}
+
+.text-travel,
+.text-goals {
+	display: inline-block;
+	color: #171717;
+	overflow: hidden;
+}
+
+.text-travel-bg {
+	background-color: #275EA7;
+}
+
+.text-goals-bg {
+	background-color: #612E8A;
+}
+
+.homepage-photo-travel {
+	background-image: url("images/homepage-photos/20190316_093006.jpg");
+	height: 65%;
+	width: 25vw;
+	background-size: cover;
+	display: none;
+}
+
+.homepage-photo-goals {
+	background-image: url("images/homepage-photos/IMG20190107122639.jpg");
+	height: 65%;
+	width: 25vw;
+	background-size: cover;
+	display: none;
+}
+
+.homepage-photo-goals.show,
+.homepage-photo-travel.show {
+	display: flex;
+	justify-content: center;
+	transition: all .2s;
+}
+
+.text-link a {
+	text-decoration: none;
+	color: #171717;
+}
+
+.text-link a:hover {
+	text-decoration: none;
+	color: white;
 }
 
 .text-travel p {
@@ -58,6 +107,7 @@ body {
 }
 
 .text-travel a {
+	color: #171717;
 	text-decoration: none !important;
 }
 
@@ -70,6 +120,121 @@ body {
 	line-height: 7rem;
 }
 
-.travel-hover p {
-	background-color: white;
+
+/* //HOMEPAGE MEDIA QUERIES */
+
+@media (max-width: 375px) {
+
+	.my-menu ul {
+		display: none;
+	}
+	
+	.text-travel {
+		color: #275EA7;
+	}
+	
+	.text-goals {
+		color: #612E8A;
+		letter-spacing: 5px;
+	}
+	
+	.text-travel p, .text-goals p {
+		margin: 0;
+		padding: 0; 
+		font-size: 5.5rem;
+		text-align: center;
+		line-height: 90px;
+	}
+	
+}
+
+@media (min-width: 376px) and (max-width: 576px) {
+
+	.my-menu ul {
+		/* margin: 0;
+		text-align: center; */
+		display: none;
+	}
+	
+	/* .my-menu li {
+		font-size: 2.4rem;
+	} */
+	
+	.text-travel {
+		color: #275EA7;
+	}
+	
+	.text-goals {
+		color: #612E8A;
+		letter-spacing: 5px;
+	}
+	
+	.text-travel p, .text-goals p {
+		margin: 0;
+		padding: 0; 
+		font-size: 6rem;
+		text-align: center;
+		line-height: 100px;
+	}	
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+	.my-menu ul {
+		margin: 0;
+		text-align: center;
+	}
+	
+	.my-menu li {
+		font-size: 2.4rem;
+	}
+	
+	.text-travel {
+		color: #275EA7;
+	}
+	
+	.text-goals {
+		color: #612E8A;
+		letter-spacing: 15px;
+	}
+	
+	.text-travel p, .text-goals p {
+		margin: 0;
+		padding: 30px; 
+		font-size: 11rem;
+		text-align: center;
+	}	
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+.my-menu ul {
+	margin: 0;
+	text-align: center;
+}
+
+.my-menu li {
+	font-size: 2.8rem;
+}
+
+.text-travel {
+	color: #275EA7;
+}
+
+.text-goals {
+	color: #612E8A;
+	letter-spacing: 15px;
+}
+
+.text-travel p, .text-goals p {
+	margin: 0;
+	padding: 40px; 
+	font-size: 13rem;
+	text-align: center;
+}
+
 }
