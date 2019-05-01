@@ -1,0 +1,449 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-size: 16px;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar {
+	position: fixed !important;
+	background: rgba(67, 67, 67, 0.5);
+	width: 100%;
+	margin-top: 0;
+	justify-content: flex-end !important;
+	font-size: 1.2rem;
+	z-index: 1;
+}
+
+.navbar ul {
+	padding: 5px 0;
+}
+
+.navbar li a {
+	color: white;
+	margin-right: 30px;
+	text-decoration: none;
+}
+
+.navbar li a:hover {
+	opacity: 0.5;
+}
+
+.my-menu li:hover {
+	cursor: pointer;
+}
+
+.video-cover {
+	object-fit: cover;
+	background: no-repeat;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+}
+
+.video-sumilon {
+	opacity: 0.6;
+	transition: 0.3s;
+	width: 70%;
+	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.video-sumilon:hover {
+	opacity: 1;
+}
+
+.sumilon-adventure {
+	height: 100vh;
+	width: 100%;
+	background-color: #275EA7;
+	color: white;
+	margin-top: -6px !important;
+	box-sizing: border-box;
+}
+
+.sumilon-adventure h3 {
+	margin-top: 20px;
+	font-family: 'Covered By Your Grace', cursive;
+}
+
+.sumilon-adventure p, .baguio-adventure p {
+	width: 460px;
+	font-size: 1.1rem;
+	opacity: 0.6;
+}
+
+.video-baguio {
+	opacity: 0.6;
+	transition: 0.3s;
+	width: 70%;
+	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.video-baguio:hover {
+	opacity: 1;
+}
+
+.baguio-adventure {
+	height: 100vh;
+	width: 100%;
+	background-color: #612E8A;
+	color: white;
+	margin-top: -6px !important;
+}
+
+.baguio-adventure h3 {
+	margin-top: 20px;
+	font-family: 'Covered By Your Grace', cursive;
+}
+
+
+/* //FOR FUTURE TRAVEL GOLS VIDEOS */
+
+.video-future-goals {
+	opacity: 0.6;
+	transition: 0.3s;
+	width: 70%;
+	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.video-future-goals:hover {
+	opacity: 1;
+	color: blue;
+}
+
+/* //FOR FUTURE TRAVEL */
+
+.future-travels {
+	width: 100%;
+	height: 110vh;
+	background-color: white;
+	color: #612E8A;
+
+}
+
+.future-travels {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.travel-title {
+	display: flex;
+	justify-content: center;
+}
+
+.travel-title p {
+	margin-top: 15px;
+	font-size: 3rem;
+	width: 12em;
+	color: #275EA7;
+	font-family: 'Covered By Your Grace', cursive;
+}
+
+.destinations {
+	margin-top: 5px;
+	height: 100vh;
+}
+
+.travel-places {
+	margin-top: -10px;
+	font-weight: 450;
+	font-size: 1.2rem;
+}
+
+footer {
+	text-align: center;
+	margin-top: 10px;
+	padding: 10px;
+	color: white;
+	background-color: rebeccapurple;
+}
+
+footer p {
+	font-size: 0.8rem;
+	margin: 0;
+}
+
+footer img {
+	padding: 0;
+	margin: 0;
+	max-width: 70px;
+	height: auto;
+}
+
+
+
+/* //VIDEOS MEDIA QUERIES */
+
+@media (max-width: 375px) {
+
+	.container-fluid {
+		overflow: hidden;
+	}
+
+	.navbar {
+		display: none !important;
+	}
+
+	.navbar li a {
+		display: none;
+	}
+	
+	.sumilon-adventure, .baguio-adventure {
+		column-count: 1;
+		height: 90vh;
+	}
+	
+	.sumilon-adventure h3, .baguio-adventure h3 {
+		font-size: 1.8rem;
+	}
+	
+	.sumilon-adventure p, .baguio-adventure p {
+		font-size: 0.9rem;
+		width: 95%;
+	}
+	
+	.video-sumilon, .video-baguio {
+		width: 90%;
+		opacity: 1;
+	}
+
+	.future-travels {
+		padding: 0 !important;
+		height: 260vh;
+	}
+
+	.travel-title p {
+		position: absolute;
+		top: 0;
+		font-size: 2rem;
+		width: 12em;
+	}
+	
+	.destinations {
+		column-count: 1;
+		position: absolute;
+		top: 60px;
+	}
+	
+	.video-future-goals {
+		width: 90%;
+		opacity: 1;
+	}
+	
+	.travel-places {
+		font-size: 1.2rem;
+	}
+
+}
+
+@media (min-width: 376px) and (max-width: 576px) {
+
+	.container-fluid {
+		overflow: hidden;
+	}
+
+	.navbar {
+		display: none !important;
+	}
+	
+	.navbar li a {
+		display: none;
+	}
+	
+	.video-cover {
+		height: 50%;
+	}
+	
+	.sumilon-adventure, .baguio-adventure {
+		column-count: 1;
+		height: 85vh;
+	}
+	
+	.sumilon-adventure h3, .baguio-adventure h3 {
+		font-size: 2rem;
+	}
+	
+	.sumilon-adventure p, .baguio-adventure p {
+		font-size: 1.1rem;
+		width: 95%;
+	}
+	
+	.video-sumilon, .video-baguio {
+		width: 90%;
+		opacity: 1;
+	}
+
+	.future-travels {
+		padding: 0 !important;
+		height: 250vh;
+	}
+	
+	.travel-title p {
+		position: absolute;
+		top: 10px;
+		font-size: 2.6rem;
+		width: 12em;
+	}
+	
+	.destinations {
+		column-count: 1;
+		position: absolute;
+		top: 90px;
+	}
+	
+	.video-future-goals {
+		width: 90%;
+		opacity: 1;
+	}
+	
+	.travel-places {
+		font-size: 1.5rem;
+	}
+
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+	.container-fluid {
+		overflow: hidden;
+	}
+	
+	.navbar {
+		display: none !important;
+	}
+
+	.navbar li a {
+		display: none;
+	}
+	
+	.video-cover {
+		height: 50%;
+	}
+	
+	.sumilon-adventure, .baguio-adventure {
+		column-count: 1;
+		height: 95vh;
+	}
+	
+	.sumilon-adventure h3, .baguio-adventure h3 {
+		font-size: 2.6rem;
+	}
+	
+	.sumilon-adventure p, .baguio-adventure p {
+		font-size: 1.5rem;
+		width: 90%;
+	}
+	
+	.video-sumilon, .video-baguio {
+		width: 90%;
+		opacity: 1;
+	}
+
+	.future-travels {
+		padding: 0 !important;
+		height: 265vh;
+	}
+	
+	.travel-title p {
+		position: absolute;
+		top: 10px;
+		font-size: 3.2rem;
+		width: 12em;
+	}
+	
+	.destinations {
+		column-count: 1;
+		position: absolute;
+		top: 120px;
+	}
+	
+	.video-future-goals {
+		width: 80%;
+		opacity: 1;
+	}
+	
+	.travel-places {
+		font-size: 1.7rem;
+	}
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+.container-fluid {
+	overflow: hidden;
+}
+
+.navbar {
+	display: none !important;
+}
+
+.navbar li a {
+	display: none;
+}
+
+.video-cover {
+	height: 50%;
+}
+
+.sumilon-adventure, .baguio-adventure {
+	column-count: 1;
+	height: 90vh;
+}
+
+.sumilon-adventure h3, .baguio-adventure h3 {
+	font-size: 3rem;
+}
+
+.sumilon-adventure p, .baguio-adventure p {
+	font-size: 1.8rem;
+	width: 90%;
+}
+
+.video-sumilon, .video-baguio {
+	width: 90%;
+	opacity: 1;
+}
+
+.future-travels {
+	padding: 0 !important;
+	height: 255vh;
+}
+
+.travel-title p {
+	position: absolute;
+	top: 10px;
+	font-size: 3.8rem;
+	width: 12em;
+}
+
+.destinations {
+	column-count: 1;
+	position: absolute;
+	top: 120px;
+}
+
+.video-future-goals {
+	width: 80%;
+	opacity: 1;
+}
+
+.travel-places {
+	font-size: 2rem;
+}
+
+}
