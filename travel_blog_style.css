@@ -195,9 +195,11 @@ footer img {
 }
 
 
+
+
 /* //FOR BLOG MEDIA QUERIES */
 
-@media (max-width: 375px) {
+@media (max-width: 320px) {
 
     .navbar li a {
         display: none;
@@ -205,10 +207,6 @@ footer img {
 
     .blog-cover-photo {
         height: 50%;
-    }
-
-    .davao-blog, .baguio-blog {
-        height: 100%;
     }
 
     .blog-cover-photo h3 {
@@ -230,13 +228,14 @@ footer img {
     }
 
     .davao-blog, .baguio-blog {
-        height: 115vh;
+        height: 140vh;
     }
 
     .davao-blog p,
     .baguio-blog p {
         font-size: 1rem;
         width: 100%;
+        line-height: 25px;
     }
 
     .davao-blog img,
@@ -252,7 +251,7 @@ footer img {
 
     .baguio-blog h4 {
         font-size: 1.5rem;
-        padding: 0 50px;
+        padding: 0 30px;
     }
 
     .davao-blog h6,
@@ -261,7 +260,7 @@ footer img {
     }
 
     .travel-new-photo {
-        height: 110%; 
+        height: 120%; 
     }
 
     .travel-new-things h3 {
@@ -273,7 +272,7 @@ footer img {
     .travel-new-things p {
         margin-top: 0;
         margin-left: 0px;
-        font-size: 1.1rem;
+        font-size: 1rem;
         width: 100%;
         text-align: center;
     }
@@ -288,10 +287,6 @@ footer img {
 
     .blog-cover-photo {
         height: 50%;
-    }
-
-    .davao-blog, .baguio-blog {
-        height: 100%;
     }
 
     .blog-cover-photo h3 {
