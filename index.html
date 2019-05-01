@@ -108,22 +108,6 @@
 		}
 
 
-
-		document.getElementsByClassName("text-travel")[0].touchstart = function () {
-
-			document.getElementsByClassName("container-fluid")[0].classList.add("text-travel-bg");
-			document.getElementsByClassName("text-goals")[0].classList.add("text-goals-font");
-			document.getElementsByClassName("my-menu")[0].classList.add("mymenu-color-goals");
-		}
-
-		document.getElementsByClassName("text-travel")[0].touchend = function () {
-
-			document.getElementsByClassName("container-fluid")[0].classList.remove("text-travel-bg");
-			document.getElementsByClassName("text-goals")[0].classList.remove("text-goals-font");
-			document.getElementsByClassName("my-menu")[0].classList.remove("mymenu-color-goals");
-		}
-
-
 		//FOR TEXT GOALS
 
 		document.getElementsByClassName("text-goals")[0].onmouseover = function () {
@@ -145,25 +129,8 @@
 				document.getElementsByClassName("text-travel")[0].classList.remove("text-travel-font");
 				document.getElementsByClassName("my-menu")[0].classList.remove("mymenu-color-travel");
 
-
-
-				document.getElementsByClassName("text-goals")[0].touchstart = function () {
-
-					document.getElementsByClassName("container-fluid")[0].classList.add("text-goals-bg", "text-travel-font", "my-menu-color");
-					document.getElementsByClassName("text-travel")[0].classList.add("text-travel-font");
-					document.getElementsByClassName("my-menu")[0].classList.add("mymenu-color-travel");
-				}
-
-				document.getElementsByClassName("text-goals")[0].touchend = function () {
-
-					document.getElementsByClassName("container-fluid")[0].classList.remove("text-goals-bg", "text-travel-font", "my-menu-color");
-					document.getElementsByClassName("text-travel")[0].classList.remove("text-travel-font");
-					document.getElementsByClassName("my-menu")[0].classList.remove("mymenu-color-travel");
-
-
-				}
-
 		}
+
 	</script>
 
 </body>
