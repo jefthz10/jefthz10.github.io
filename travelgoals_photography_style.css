@@ -16,9 +16,15 @@ body {
 
 .navbar {
 	position: absolute !important;
-	top: 5px;
-	font-size: 1.3rem;
-	right: 0;
+	/* background: rgba(67, 67, 67, 0.5); */
+	width: 100%;
+	justify-content: flex-end !important;
+	margin-top: 0;
+	font-size: 1.2rem;
+}
+
+.navbar ul {
+	padding: 5px 0;
 }
 
 .navbar li a {
@@ -66,7 +72,7 @@ body {
 
 .container {
 	margin: 20px auto;
-	columns: 4;
+	columns: 5;
 	column-gap: 40px;
 	width: 100%;
 	max-width: 1200px !important;
@@ -166,7 +172,7 @@ footer img {
 
 /* //PHOTOGRAPHY MEDIA QUERIES */
 
-@media (max-width: 375px) {
+@media (max-width: 320px) {
 
 	.container {
 		column-count: 1;
@@ -177,18 +183,25 @@ footer img {
 	}
 
 	.background-cover-photography {
-		height: 50%;
+		height: 90%;
 	}
 
 	.cover-qoute {
-		top: 25px;
+		top: 55px;
 		width: 100%;
 		text-align: center;
+
+		display: flex;
+		flex-direction: column;
+	}
+
+	.qoutation {
+		display: none;
+		font-size: 2rem;
 	}
 
 	.cover-qoute p {
 		font-size: 1.1rem;
-		display: inline;
 	}
 
 	.my-travel-title h3 {
@@ -202,7 +215,73 @@ footer img {
 	}
 
 	.text-block {
-		height: 350%;
+		height: 480%;
+		position: absolute;
+		top: 0;
+	}
+
+	.text-block h3 {
+		top: 50px;
+		font-size: 1.8rem;
+	}
+
+	.text-block p {
+		font-size: 1rem;
+		padding: 0 8px;
+	}
+
+	footer {
+		position: relative;
+		top: 600px;
+	}
+
+}
+
+
+@media (min-width: 321px) and (max-width: 375px) {
+
+	.container {
+		column-count: 1;
+	}
+
+	.navbar li a {
+		display: none;
+	}
+
+	.background-cover-photography {
+		height: 80%;
+	}
+
+	.cover-qoute {
+		top: 60px;
+		width: 100%;
+		text-align: center;
+
+		display: flex;
+		flex-direction: column;
+	}
+
+	.qoutation {
+		display: none;
+		font-size: 2rem;
+	}
+
+	.cover-qoute p {
+		font-size: 1.1rem;
+	}
+
+	.my-travel-title h3 {
+		font-size: 1.5rem;
+		padding: 0 30px;
+	}
+
+	.travel-experience img {
+		height: 50%;
+		opacity: 0;
+	}
+
+	.text-block {
+		height: 380%;
 		position: absolute;
 		top: 0;
 	}
@@ -220,7 +299,7 @@ footer img {
 
 	footer {
 		position: relative;
-		top: 450px;
+		top: 520px;
 	}
 
 }
@@ -241,11 +320,16 @@ footer img {
 	}
 
 	.background-cover-photography {
-		height: 50%;
+		height: 70%;
 	}
 
 	.cover-qoute {
-		top: 80px;
+		top: 75px;
+	}
+
+	.qoutation {
+		display: none;
+		font-size: 2rem;
 	}
 
 	.cover-qoute p {
@@ -258,7 +342,7 @@ footer img {
 	}
 
 	.text-block {
-		height: 300%;
+		height: 380%;
 		position: absolute;
 		top: 0;
 	}
@@ -275,7 +359,7 @@ footer img {
 
 	footer {
 		position: relative;
-		top: 460px;
+		top: 580px;
 	}
 
 }
@@ -301,7 +385,12 @@ footer img {
 	}
 
 	.cover-qoute {
-		top: 140px;
+		top: 85px; 
+	}
+
+	.qoutation {
+		display: none;
+		font-size: 2rem;
 	}
 
 	.travel-experience img {
@@ -313,12 +402,13 @@ footer img {
 	}
 
 	.text-block h3 {
-		top: 50px;
+		top: 40px;
 		font-size: 2rem;
 	}
 
 	.text-block p {
 		padding: 0 90px;
+		line-height: 30px;
 	}
 
 	.travel-new-photo {
@@ -328,7 +418,7 @@ footer img {
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1024px) {
 
 	.container {
 		column-count: 2;
