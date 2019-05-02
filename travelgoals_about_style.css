@@ -38,7 +38,12 @@ body {
 
 .navbar li a:hover {
 	opacity: 0.5;
-	transition: 0.3 s;
+	transition: 0.3s;
+}
+
+.navbar img {
+	height: 23px;
+	display: none;
 }
 
 /*//FOR COVER PHOTO*/
@@ -220,13 +225,13 @@ footer img {
 	}
 
 	.content-photo-1 h3 {
-		font-size: 2.5rem;
+		font-size: 2.3rem;
 	}
 
 	.content-photo-1 p,
 	.content-photo-2 p {
-		width: 85%;
-		font-size: 1.3rem;
+		width: 90%;
+		font-size: 1.2rem;
 	}
 
 }
@@ -298,6 +303,12 @@ footer img {
 
 	.navbar ul {
 		display: none;
+	}
+
+	.navbar img  {
+		display: block;
+		margin-right: 25px;
+		margin-top: 15px;
 	}
 
 	.group-photo-1,
