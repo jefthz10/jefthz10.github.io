@@ -113,7 +113,7 @@
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 	</script>
 	<script>
-		document.getElementById("menu-toggle").ontouchstart = function(){
+		document.getElementById("menu-toggle").ontouchmove = function(){
 			document.getElementsByClassName("navbar-nav")[0].classList.remove("hide");
 			document.getElementsByClassName("navbar-nav")[0].classList.add("show");
 		}
