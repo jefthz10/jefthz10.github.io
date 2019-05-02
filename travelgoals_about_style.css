@@ -160,10 +160,6 @@ footer img {
 		background-color: transparent;
 	}
 
-	.navbar ul {
-		display: none;
-	}
-
 	.group-photo-1,
 	.group-photo-2 {
 		column-count: 1;
@@ -191,6 +187,29 @@ footer img {
 		font-size: 1.2rem;
 	}
 
+
+	.navbar ul {
+		font-size: 2.5rem;
+	}
+
+	.navbar img  {
+		display: block;
+		margin-right: 25px;
+		margin-top: 15px;
+	}
+
+	.navbar-nav.hide{
+		display: none;
+	}
+	.navbar-nav.show{
+		display: block;
+		position: fixed;
+		height: 100vh;
+		width: 100vw;
+		left: 0;
+		top: 0;
+	}
+
 }
 
 @media (min-width: 376px) and (max-width: 767px) {
@@ -201,10 +220,6 @@ footer img {
 
 	.navbar {
 		background-color: transparent;
-	}
-
-	.navbar ul {
-		display: none;
 	}
 
 	.group-photo-1,
