@@ -234,6 +234,29 @@ footer img {
 		font-size: 1.2rem;
 	}
 
+
+	.navbar ul {
+		font-size: 2.5rem;
+	}
+
+	.navbar img  {
+		display: block;
+		margin-right: 25px;
+		margin-top: 15px;
+	}
+
+	.navbar-nav.hide{
+		display: none;
+	}
+	.navbar-nav.show{
+		display: block;
+		position: fixed;
+		height: 100vh;
+		width: 100vw;
+		left: 0;
+		top: 0;
+	}
+
 }
 
 
@@ -302,16 +325,28 @@ footer img {
 		background-color: transparent;
 	}
 
-	
+
 
 	.navbar ul {
-		display: none;
+		font-size: 2.5rem;
 	}
 
 	.navbar img  {
 		display: block;
 		margin-right: 25px;
 		margin-top: 15px;
+	}
+
+	.navbar-nav.hide{
+		display: none;
+	}
+	.navbar-nav.show{
+		display: block;
+		position: fixed;
+		height: 100vh;
+		width: 100vw;
+		left: 0;
+		top: 0;
 	}
 
 
