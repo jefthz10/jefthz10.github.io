@@ -30,7 +30,7 @@ body {
 .my-menu li a {
 	color: #171717;
 	text-decoration: none;
-	margin-right: 13px;
+	margin-right: 20px;
 }
 
 .my-menu li:hover {
@@ -70,26 +70,24 @@ body {
 	width: 25vw;
 	background-size: cover;
 	display: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+	transition: .2s ease-in;
 }
 
 .homepage-photo-goals {
-	background-image: url("images/homepage-photos/IMG20190107122639.jpg");
+	background-image: url("images/homepage-photos/IMG20190216142706.jpg");
 	height: 65%;
 	width: 25vw;
 	background-size: cover;
 	display: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+	transition: .2s ease-in;
 }
 
 .homepage-photo-goals.show,
 .homepage-photo-travel.show {
 	display: flex;
 	justify-content: center;
-	transition: all .2s;
-}
-
-.text-link a {
-	text-decoration: none;
-	color: #171717;
 }
 
 .text-link a:hover {
@@ -104,11 +102,6 @@ body {
 	padding: 10px 0;
 	cursor: pointer;
 	line-height: 7rem;
-}
-
-.text-travel a {
-	color: #171717;
-	text-decoration: none !important;
 }
 
 .text-goals p {
@@ -210,7 +203,7 @@ body {
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1024px) {
 
 .my-menu ul {
 	margin: 0;
