@@ -256,7 +256,7 @@ footer img {
 	.navbar ul {
 		display: none;
 	}
-
+	
 	.group-photo-1,
 	.group-photo-2 {
 		column-count: 1;
@@ -282,6 +282,7 @@ footer img {
 	.content-photo-2 p {
 		width: 85%;
 		font-size: 1.7rem;
+		line-height: 55px;
 	}
 
 }
@@ -301,6 +302,8 @@ footer img {
 		background-color: transparent;
 	}
 
+	
+
 	.navbar ul {
 		display: none;
 	}
@@ -310,6 +313,8 @@ footer img {
 		margin-right: 25px;
 		margin-top: 15px;
 	}
+
+
 
 	.group-photo-1,
 	.group-photo-2 {
@@ -336,6 +341,7 @@ footer img {
 	.content-photo-2 p {
 		width: 85%;
 		font-size: 2rem;
+		line-height: 60px;
 	}
 
 }
