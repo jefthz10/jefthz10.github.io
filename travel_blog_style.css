@@ -546,7 +546,7 @@ footer img {
     .davao-blog img,
     .baguio-blog img {
         height: 40vh;
-        width: 95%;
+        width: 100%; 
     }
 
     .davao-blog h4,
@@ -569,6 +569,5 @@ footer img {
         width: 65%;
         text-align: center;
     }
-
 
 }
